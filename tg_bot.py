@@ -36,7 +36,6 @@ def handle_text(message):
     if message.text == 'команда в':
         s1 = 'Использована команда в'
         tg_analytic.statistics(message.chat.id, message.text)
-
         bot.send_message(message.chat.id,s1,reply_markup=user_markup)
     if message.text[:10] == 'статистика' or message.text[:10] == 'Cтатистика':
         st = message.text.split(' ')
