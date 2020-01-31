@@ -19,7 +19,6 @@ day_type = {
     4: 'дня'
 }
 
-
 # remove txt file
 def remove(user_id):
     path = os.getcwd() + '/%s.txt' % user_id
